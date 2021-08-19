@@ -4,7 +4,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
   }
+  
+a, a:link {
+    color: rgb(180, 255, 186);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: rgb(248, 174, 238);
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active{
+    color: powderblue;
+}
   
   header {
     display: flex;
@@ -50,7 +73,7 @@
   
   .cta {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgb(0, 135, 169);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -144,6 +167,27 @@
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
+}
+
+.container h1{
+    font-size:50px;
+    color: ghostwhite;
+    padding-left: 15%;
+    padding-top: 4%;
+}
+
+.container p{
+    color: ghostwhite;
+    padding-left: 15%;
+    padding-top: 2%;
+    padding-right: 15%;
+}
+
+.container ul{
+    color: ghostwhite;
+    padding-left: 15%;
+    padding-top: 1%;
+    padding-right: 15%;
 }
 /*
 .navbar{
