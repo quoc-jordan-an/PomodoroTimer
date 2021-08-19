@@ -134,11 +134,12 @@
   
 
 .container{
-    height: 100vh;
+    height: 90.9vh;
     width: 100%;
     background-image: url(image/format/black1.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
