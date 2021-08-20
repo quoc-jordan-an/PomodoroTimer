@@ -55,9 +55,11 @@ function timer(){
 
     //Break Timer Countdown
     if(wm.innerText == 0 && ws.innerText == 0){
-        sound.play();
-        alert("Yo take break!");
-        sound.pause();
+        if (bs.innerText == 0 && bm. innerText == 5){
+            sound.play();
+            alert("Yo take break!");
+            sound.pause();
+        }
         if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
@@ -71,10 +73,15 @@ function timer(){
         wm.innerText = 25;
         ws.innerText = "00";
 
-        bm.innerText = 5;
-        bs.innerText = "00";
-
         document.getElementById('counter').innerText++;
+        if(document.getElementById('counter').innerText % 4 == 0){
+            bm.innerText = 15;
+            bs.innerText = "00";
+        }
+        else{
+            bm.innerText = 5;
+            bs.innerText = "00";
+        }
     }
 }
 
