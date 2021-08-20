@@ -237,7 +237,7 @@ p {
     grid-area: 3 / 4 / 3 / 4;
 }
 
-.container{
+.canvas{
     height: 90.9vh;
     width: 100%;
     background-image: url(image/format/black1.jpg);
@@ -250,21 +250,21 @@ p {
     position: relative;
 }
 
-.container h1{
+.canvas h1{
     font-size:50px;
     color: ghostwhite;
     padding-left: 15%;
     padding-top: 4%;
 }
 
-.container p{
+.canvas p{
     color: ghostwhite;
     padding-left: 15%;
     padding-top: 2%;
     padding-right: 15%;
 }
 
-.container ul{
+.canvas ul{
     color: ghostwhite;
     padding-left: 15%;
     padding-top: 1%;
