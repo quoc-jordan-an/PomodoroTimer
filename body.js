@@ -1,4 +1,5 @@
-
+var sound = new Audio("sound/timer_sound.mp3");
+sound.loop = true;
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var reset = document.getElementById('reset');
@@ -13,7 +14,6 @@ var bs = document.getElementById('b_seconds');
 var startTimer;
 if (start){
     start.addEventListener('click', function(){
-        console.log("here");
         if(startTimer === undefined){
             startTimer = setInterval(timer, 1000)
         } else {
@@ -55,6 +55,9 @@ function timer(){
 
     //Break Timer Countdown
     if(wm.innerText == 0 && ws.innerText == 0){
+        sound.play();
+        alert("Yo take break!");
+        sound.pause();
         if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
