@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Pomodoro Timer</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+  
+  
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html"><img src="../image/format/logo2.png" alt="logo"></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="../index.html">Classic</a></li>
+            <li><a href="#">Custom</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <a class="fts" href="#">Features</a>
+</header>
+<div class = "canvas">
+  <div id = "container">
+    <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
+          <!--Work Timer-->
+          <div id="work-timer" class="timer">
+              <p id="w_minutes" contenteditable="true" >00</p><p class="semicolon">:</p><p id="w_seconds" contenteditable="true">00</p>
+          </div>
+
+          <!--Cycle Counter-->
+          <p id="counter" class="timer">0</p>
+
+          <!--Break Timer-->
+          <div id="break-timer" class="timer">
+              <p id="b_minutes" contenteditable="true" >00</p><p class="semicolon">:</p><p id="b_seconds" contenteditable="true">00</p>
+          </div>
+          <button id="start" class="btn">Start</button>
+          <button id="stop" class="btn">Pause</button>
+          <button id="reset" class="btn">Reset</button>
+      </div>
+</div>
+<script src='body.js'></script>
+  <!--
+  <div class = "container">
+    <div class = "navbar"> 
+      <a href= "index.html">
+        <img src = "image/format/logo.png" alt = "This image is not available right now!" class = "logo">
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "">About</a></li>
+          
+        </ul>
+      </nav>
+      
+    </div>
+  </div>
+  -->
+</body>
+</html>
