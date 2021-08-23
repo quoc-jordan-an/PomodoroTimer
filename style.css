@@ -159,12 +159,14 @@ a:active{
     background-color: transparent;
     margin: 0 auto;
     
-    
     display: grid;
     
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 1fr);
+    
+    align-items: stretch;
     position: relative;
+    white-space: nowrap;
 }
  
 /*timers*/
@@ -194,6 +196,8 @@ a:active{
 
     font-size: 25px;
     font-weight: bold;
+    min-height:30px;
+    width:70px;
 }
 
 p {
