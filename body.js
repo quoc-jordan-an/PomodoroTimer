@@ -55,16 +55,17 @@ function timer(){
 
     //Break Timer Countdown
     if(wm.innerText == 0 && ws.innerText == 0){
-        if (bs.innerText == 0 && bm. innerText == 5){
-            sound.play();
-            alert("Yo take break!");
-            sound.pause();
-        }
         if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
             bs.innerText = 59;
             bm.innerText--;
+        }
+
+        if (bs.innerText == 0 && bm. innerText == 5){
+            sound.play();
+            alert("Yo take break!");
+            sound.pause();
         }
     }
 

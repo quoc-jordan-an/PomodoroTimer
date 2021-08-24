@@ -1,9 +1,16 @@
-var sound = new Audio("sound/timer_sound.mp3");
+var sound = new Audio("../sound/timer_sound.mp3");
 sound.loop = true;
+/*var sound_silent = new Audio("../sound/silence_64kb.mp3");
+sound_silent.loop = true;
+sound_silent.muted = "true";
+sound_silent.play();*/
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var reset = document.getElementById('reset');
 
+var start_wm = 0;
+var start_ws = 0;
+var yo_break = true;
 var wm = document.getElementById('w_minutes');
 var ws = document.getElementById('w_seconds');
 
@@ -55,16 +62,17 @@ function timer(){
 
     //Break Timer Countdown
     if(wm.innerText == 0 && ws.innerText == 0){
-        if (bs.innerText == 0 && bm. innerText == 5){
-            sound.play();
-            alert("Yo take break!");
-            sound.pause();
-        }
         if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
             bs.innerText = 59;
             bm.innerText--;
+        }
+        if (yo_break){
+            sound.play();
+            alert("Yo take break!");
+            sound.pause();
+            yo_break = false;
         }
     }
 
@@ -82,6 +90,7 @@ function timer(){
             bm.innerText = 5;
             bs.innerText = "00";
         }
+        yo_break = true;
     }
 }
 
